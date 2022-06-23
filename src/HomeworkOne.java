@@ -1,6 +1,6 @@
 public class HomeworkOne {
     public static void main(String[] args) {
-        int a = 4, b = 8, c = 12, d = 14;
+        int a = 4, b = 8, c = 12, d = 16;
         // 21 //
         System.out.println("21");
         if (a > b && a > c) {
@@ -103,8 +103,10 @@ public class HomeworkOne {
             System.out.println(a);
         } else if (b > a && b > c && b > d) {
             System.out.println(b);
-        } else {
+        } else if (c > a && c > b && c > d){
             System.out.println(c);
+        } else {
+            System.out.println(d);
         }
         // 32 //
         System.out.println("32");
@@ -112,8 +114,10 @@ public class HomeworkOne {
             System.out.println(a);
         } else if (b < a && b < c && b < d) {
             System.out.println(b);
-        } else {
+        } else if (c < a && c < b && c < d){
             System.out.println(c);
+        } else {
+            System.out.println(d);
         }
         // 33 //
         System.out.println("33");
@@ -124,7 +128,7 @@ public class HomeworkOne {
         }
         // 34 //
         System.out.println("34");
-        if (a + b == c + d || a + c == d + b || a + d == c + b) {
+        if (a + b == c + d && a + c == d + b && a + d == c + b) {
             System.out.println(true);
         } else {
             System.out.println(false);
@@ -139,13 +143,13 @@ public class HomeworkOne {
         // 36 //
         System.out.println("36");
         int oddCount = 0;
-        if (a % 2 > 0) {
+        if (!(a % 2 == 0)) {
             oddCount++;
-        } else if (b % 2 > 0) {
+        } else if (!(b % 2 == 0)) {
             oddCount++;
-        } else if (c % 2 > 0) {
+        } else if (!(c % 2 == 0)) {
             oddCount++;
-        } else if (d % 2 > 0) {
+        } else if (!(d % 2 == 0)) {
             oddCount++;
         }
         if (oddCount >= 2) {
