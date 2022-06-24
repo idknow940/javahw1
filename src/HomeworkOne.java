@@ -1,6 +1,6 @@
 public class HomeworkOne {
     public static void main(String[] args) {
-        int a = 4, b = 8, c = 12, d = 16;
+        double a = 4, b = 8, c = 12, d = 16;
         // 21 //
         System.out.println("21");
         if (a > b && a > c) {
@@ -38,7 +38,7 @@ public class HomeworkOne {
         // 25 //
         System.out.println("25");
         int y = 0;
-        if (a + b > c && b + c > a) {
+        if (a + b > c && b + c > a && a + c > b) {
             y = 1;
         } else {
             y = 2;
@@ -62,10 +62,14 @@ public class HomeworkOne {
         // 28 //
         System.out.println("28");
         boolean geoProgressionBool = true;
-        if (c / b == b / a) {
-            System.out.println(geoProgressionBool);
+        if (c != 0 && b != 0 && a !=0){
+            if (c / b == b / a) {
+                System.out.println(geoProgressionBool);
+            } else {
+                System.out.println(!geoProgressionBool);
+            }
         } else {
-            System.out.println(!geoProgressionBool);
+            System.out.println("One of the numbers might be 0");
         }
         // 29 //
         System.out.println("29");
