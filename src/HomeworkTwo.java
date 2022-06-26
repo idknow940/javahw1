@@ -42,7 +42,21 @@ public class HomeworkTwo {
             System.out.print(a5[i] > 24.12 && a5[i] < 467.23 ? a5[i] + "," : "");
         }
         System.out.println();
-        /* 6 DELETED */
+        //6?????
+        /*
+        for (int i = 0; i < a6.length; i++) {
+            a6[i] = i;
+        }
+        int countDivBy2 = 0;
+        for (int i = 0; i < a6.length; i++) {
+            if (a6[i] % 2 == 0) {
+                countDivBy2++;
+            }
+        }
+        System.out.println(countDivBy2);
+        System.out.println();s
+        */
+
         // 7 //
         System.out.println(":7:");
         int n = 20; // 0 < n < 21
